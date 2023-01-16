@@ -11,7 +11,7 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(className = "flex pt-1 ltr:ml-auto ltr:pl-2.5 rtl:mr-auto rtl:pr-2.5")
+    @FindBy(xpath = "//span[@class='whitespace-nowrap']")
     public WebElement GroceryTab;
 
 
