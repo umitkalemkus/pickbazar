@@ -1,38 +1,26 @@
 package umitPickBazaar;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class Grocery {
-
+public class Makeup {
 
     @Test
-    public void grocery(){
+    public void makeup() {
 
         Driver.getDriver().get(ConfigReader.getProperty("url"));
 
         HomePage hp = new HomePage();
         hp.GroceryTab.click();
-
+        hp.MakeupTab.click();
+        System.out.println(Driver.getDriver().getCurrentUrl());
+        System.out.println(hp.MakeupTab.getText());
         Assert.assertEquals(Driver.getDriver().getCurrentUrl(),ConfigReader.getProperty("url"));
 
-
-
-
-        /*WebElement button = Driver.getDriver().findElement(By.id("headlessui-menu-button-2"));
-        Select select =new Select(button);
-        select.
-*/}
-
-
-
-
+    }
 
 
 

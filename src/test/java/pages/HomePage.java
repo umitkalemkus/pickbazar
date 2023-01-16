@@ -15,6 +15,17 @@ public class HomePage {
     public WebElement GroceryTab;
 
 
+    @FindBy(id= "headlessui-menu-item-6")
+    public WebElement BakeryTab;
+
+
+    @FindBy(id= "headlessui-menu-item-7")
+    public WebElement MakeupTab;
+
+
+
+
+
 
 
 }
