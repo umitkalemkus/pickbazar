@@ -1,27 +1,26 @@
-package umitPickBazaar;
+package US_08_09_P;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class Bakery {
+public class US_08_9_P {
 
     @Test
-    public void bakery() {
+    public void books() {
 
         Driver.getDriver().get(ConfigReader.getProperty("url"));
 
         HomePage hp = new HomePage();
         hp.GroceryTab.click();
-        hp.BakeryTab.click();
-        System.out.println(hp.BakeryTab.getText());
+        hp.BooksTab.click();
+        System.out.println(hp.BooksTab.getText());
+        System.out.println(Driver.getDriver().getCurrentUrl());
         Assert.assertEquals(Driver.getDriver().getCurrentUrl(), ConfigReader.getProperty("url"));
 
     }
+
 
 }

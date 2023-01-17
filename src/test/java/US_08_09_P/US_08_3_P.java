@@ -1,4 +1,4 @@
-package umitPickBazaar;
+package US_08_09_P;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,7 +6,7 @@ import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class Makeup {
+public class US_08_3_P {
 
     @Test
     public void makeup() {

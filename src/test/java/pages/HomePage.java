@@ -22,6 +22,24 @@ public class HomePage {
     @FindBy(id= "headlessui-menu-item-7")
     public WebElement MakeupTab;
 
+    @FindBy(id= "headlessui-menu-item-8")
+    public WebElement BagsTab;
+
+    @FindBy(id= "headlessui-menu-item-9")
+    public WebElement ClothingTab;
+
+    @FindBy(id= "headlessui-menu-item-10")
+    public WebElement FurnitureTab;
+
+    @FindBy(id= "headlessui-menu-item-11")
+    public WebElement DailyNeedsTab;
+
+
+    @FindBy(id= "headlessui-menu-item-12")
+    public WebElement BooksTab;
+
+
+
 
 
 

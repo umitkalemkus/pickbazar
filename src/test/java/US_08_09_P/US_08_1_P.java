@@ -1,15 +1,13 @@
-package umitPickBazaar;
+package US_08_09_P;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.TestBaseReports;
 
-public class Grocery {
+public class US_08_1_P extends TestBaseReports {
 
 
     @Test
