@@ -6,22 +6,21 @@ import pages.HomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US_08_3_P {
+public class US_08_8_T {
 
     @Test
-    public void makeup() {
+    public void books() {
 
         Driver.getDriver().get(ConfigReader.getProperty("url"));
 
         HomePage hp = new HomePage();
         hp.GroceryTab.click();
-        hp.MakeupTab.click();
+        hp.BooksTab.click();
+        System.out.println(hp.BooksTab.getText());
         System.out.println(Driver.getDriver().getCurrentUrl());
-        System.out.println(hp.MakeupTab.getText());
-        Assert.assertEquals(Driver.getDriver().getCurrentUrl(),ConfigReader.getProperty("url"));
+        Assert.assertEquals(Driver.getDriver().getCurrentUrl(), ConfigReader.getProperty("url"));
 
     }
-
 
 
 }

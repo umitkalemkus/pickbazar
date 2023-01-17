@@ -37,7 +37,7 @@ public class TestBaseReports {
         // İstediğiniz bilgileri buraya ekeyebiliyorsunuz.
         extentReports.setSystemInfo("Environment", "QA");
         extentReports.setSystemInfo("Browser", "Chrome"); // chrome, firefox
-        extentReports.setSystemInfo("QA Engineer", "Yunus Emre Çiftçi");
+        extentReports.setSystemInfo("QA Engineer", "Umit K.");
         extentHtmlReporter.config().setDocumentTitle("Report");
         extentHtmlReporter.config().setReportName("TestNG Reports");
         extentHtmlReporter.config().setDocumentTitle("Son Test " + new SimpleDateFormat("dd.MM.yyyy_HH.mm.ss").format(new Date()));//test doc uzerinde tarih yazili olacak
