@@ -38,6 +38,13 @@ public class HomePage {
     @FindBy(id= "headlessui-menu-item-12")
     public WebElement BooksTab;
 
+    @FindBy(id= "search")
+    public WebElement Search;
+
+    @FindBy(xpath="(//button)[4]")
+    public WebElement Search2;
+
+
 
 
 

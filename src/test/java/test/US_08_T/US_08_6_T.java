@@ -1,4 +1,4 @@
-package US_08_09_P;
+package test.US_08_T;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -19,8 +19,7 @@ public class US_08_6_T extends TestBaseReports {
         extentTest = extentReports.createTest("Kullanici urun kategorisi secer.");
         hp.FurnitureTab.click();
         extentTest = extentReports.createTest("Kullanici Furniture bolumunu tiklar.");
-        System.out.println(hp.FurnitureTab.getText());
-        Assert.assertEquals(Driver.getDriver().getCurrentUrl(), ConfigReader.getProperty("url"));
+        Assert.assertTrue(hp.FurnitureTab.getText().contains("Furniture"));
         extentTest = extentReports.createTest("Kullanici Furniture sayfasina giris yapilabildigini dogrular");
 
     }

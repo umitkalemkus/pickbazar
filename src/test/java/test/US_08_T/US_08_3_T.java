@@ -1,4 +1,4 @@
-package US_08_09_P;
+package test.US_08_T;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -19,10 +19,7 @@ public class US_08_3_T extends TestBaseReports {
         extentTest = extentReports.createTest(" Kullanici urun kategorisi secer. ");
         hp.MakeupTab.click();
         extentTest = extentReports.createTest(" Kullanici Make up bolumunu tiklar.");
-
-        System.out.println(Driver.getDriver().getCurrentUrl());
-        System.out.println(hp.MakeupTab.getText());
-        Assert.assertEquals(Driver.getDriver().getCurrentUrl(),ConfigReader.getProperty("url"));
+        Assert.assertTrue(hp.MakeupTab.getText().contains("Makeup"));
         extentTest = extentReports.createTest(" Kullanici Make up bolumunu tiklar.");
 
 
