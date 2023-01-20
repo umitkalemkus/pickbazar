@@ -1,13 +1,15 @@
-package pages;
+package pages.US_008_009_P;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class HomePage {
+import java.util.List;
 
-    public HomePage() {
+public class US_08_09_P {
+
+    public US_08_09_P() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
@@ -41,14 +43,17 @@ public class HomePage {
     @FindBy(id= "search")
     public WebElement Search;
 
-    @FindBy(xpath="(//button)[4]")
-    public WebElement Search2;
 
 
+    @FindBy(xpath = "//h3[@role='button']")
+    public List<WebElement> makeUpItem;
+
+    @FindBy( xpath="//button[text()='Search']")
+    public WebElement searchButton;
 
 
-
-
+    @FindBy(xpath = "//h3[@role='button']")
+    public List<WebElement> searchedMakeUp;
 
 
 

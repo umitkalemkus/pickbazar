@@ -3,17 +3,17 @@
 <suite name="Parallel Test Suite" >
     <test name="Parallel Tests 01" parallel="classes" >
         <classes>
-            <class name="US_08_T.US_08_1_T"></class>
+            <class name="test.US_08_T.US_08_1_T"></class>
         </classes>
     </test>
     <test name="Parallel Tests 02">
         <classes>
-            <class name="US_08_T.US_08_2_T"></class>
+            <class name="test.US_08_T.US_08_2_T"></class>
         </classes>
     </test>
     <test name="Parallel Tests 03">
         <classes>
-            <class name="US_08_T.US_08_3_T"></class>
+            <class name="test.US_08_T.US_08_3_T"></class>
         </classes>
 
     </test>
